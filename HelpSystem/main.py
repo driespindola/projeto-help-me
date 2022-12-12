@@ -1,3 +1,3 @@
 from Contas import Conta
-
-usuario01 = Conta()
+from Solicitacoes import Solicitacao
+usuario01 = Conta("Gustavo",10000,0000)
