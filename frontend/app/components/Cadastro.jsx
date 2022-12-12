@@ -43,7 +43,7 @@ const Cadastro = () => {
         if (nome === '') {
             setErrorName(true)
             setErrorTextName('Nome não pode ficar em branco')
-        } else if (nome.length <= 4) {
+        } else if (nome.length < 4) {
             setErrorName(true)
             setErrorTextName('Nome deve haver mais de 4 characteres!')
         } else {
@@ -53,12 +53,12 @@ const Cadastro = () => {
         if (senha !== confirmarSenha) {
             setErrorPassword(true)
             setErrorTextPassword('Senhas não coicidem')
-        } else if (senha.length <= 5) {
+        } else if (senha.length < 5) {
             setErrorPassword(true)
-            setErrorTextPassword('Senha invalida, a senha requer 5 um minimo caracteres nescessarios')
-        } else if (senha.length >= 20) {
+            setErrorTextPassword('Senha invalida, a senha requer um minimo de 5 caracteres nescessarios')
+        } else if (senha.length > 20) {
             setErrorPassword(true)
-            setErrorTextPassword('Senha invalida, a senha ultrapasa o limite de caracteres permitido')
+            setErrorTextPassword('Senha invalida, a senha ultrapassa o limite de caracteres permitidos')
         } else {
             setErrorPassword(false)
             setErrorTextPassword('')
