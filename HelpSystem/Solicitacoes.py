@@ -2,7 +2,7 @@ class Solicitacao:
 
     def __init__(self, tipo):
         self.tipo = tipo
-        self.definir_tipo()
+        self.definir_tipo(tipo)
 
 
     def definir_tipo(self,tipo):
@@ -27,6 +27,8 @@ class Solicitacao:
             print("por favor nos informe a natureza de sua solicitação")
         else:
             print("Esse digito não corresponde a nenhuma Solicitação, por favor digite um numeto valido")
-            tipo = int(input("1 Solocitação para o TI,2 Solocitação para o RH,3 Solocitação de comercio,"
-                             "4 Solocitação para a area de gerenciamento, 5 Solocitação para area fiscal,"
-                             "6 Solocitação para a area de Marketing, 7 Outro tipo de Solocitação:"))
+            while(self.tipo != 1 or self.tipo != 2 or self.tipo != 3 or self.tipo != 4 or self.tipo != 5
+                  or self.tipo != 6 or self.tipo != 7):
+                      self.tipo = int(input("1 Solocitação para o TI,2 Solocitação para o RH,3 Solocitação de comercio,"
+                                       "4 Solocitação para a area de gerenciamento, 5 Solocitação para area fiscal,"
+                                       "6 Solocitação para a area de Marketing, 7 Outro tipo de Solocitação:"))
