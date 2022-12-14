@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class Conta:
     def __init__(self, nome, senha, codigo):
         self.nome = nome
