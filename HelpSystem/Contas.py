@@ -85,9 +85,5 @@ class Conta:
                     print("area de Marketing")
                     break
 
-                        #self.codigo == "1000" or self.codigo == "1001" or self.codigo == "1002"
-                        #if (self.codigo == 1000 or self.codigo == 1001 or self.codigo == 1002 or
-                           # self.codigo == 1003 or self.codigo == 1004 or self.codigo == 1005):
-
 
         return self.codigo
