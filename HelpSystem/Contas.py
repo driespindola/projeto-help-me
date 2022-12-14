@@ -56,52 +56,36 @@ class Conta:
         self.codigo = codigo
         self.codigo = str(input("Digite o Código de sua Area:"))
 
-        if (self.codigo == "1000"):
-             print("area de TI")
-
-        elif (self.codigo == "1001"):
-             print("area de RH")
-
-        elif (self.codigo == "1002"):
-             print("area de Comércio")
-
-        elif (self.codigo == "1003"):
-             print("area de Geranciamento")
-
-        elif (self.codigo == "1004"):
-             print("area Fiscal")
-
-        elif (self.codigo == "1005"):
-             print("area de Marketing")
-
-        else:
-            while not(self.codigo == "1000" and self.codigo == "1001" and self.codigo == "1002" and
-                      self.codigo == "1003" and self.codigo == "1004" and self.codigo == "1005"):
-
+        if not(self.codigo =="1000" or self.codigo =="1001" or self.codigo =="1002" or
+               self.codigo == "1003" or self.codigo == "1004" or self.codigo == "1005"):
+            while not(self.codigo in codigo):
+                print("código invalido")
+                self.codigo = str(input("Digite o Código de Sua area:"))
                 if (self.codigo == "1000"):
                     print("area de TI")
+                    break
 
-                elif (self.codigo == "1001"):
-                      print("area de RH")
+                if (self.codigo == "1001"):
+                    print("area de RH")
+                    break
 
-                elif (self.codigo == "1002"):
-                      print("area de Comércio")
+                if (self.codigo == "1002"):
+                    print("area de Comércio")
+                    break
 
-                elif (self.codigo == "1003"):
-                      print("area de Geranciamento")
+                if (self.codigo == "1003"):
+                    print("area de Geranciamento")
+                    break
 
-                elif (self.codigo == "1004"):
-                      print("area Fiscal")
+                if (self.codigo == "1004"):
+                    print("area Fiscal")
+                    break
 
-                elif (self.codigo == "1005"):
-                      print("area de Marketing")
-                else:
-                  print("código invalido")
-                  self.codigo = str(input("Digite o Código de Sua area:"))
+                if (self.codigo == "1005"):
+                    print("area de Marketing")
+                    break
 
-                break
-
-                        # while not(self.codigo in codigo):
+                        #self.codigo == "1000" or self.codigo == "1001" or self.codigo == "1002"
                         #if (self.codigo == 1000 or self.codigo == 1001 or self.codigo == 1002 or
                            # self.codigo == 1003 or self.codigo == 1004 or self.codigo == 1005):
 
