@@ -1,3 +1,4 @@
+import csv
 class Conta:
     def __init__(self, nome, senha, codigo):
         self.nome = nome
@@ -57,45 +58,45 @@ class Conta:
                 print("código invalido")
                 self.codigo = str(input("Digite o Código de Sua area:"))
                 if (self.codigo == "1000"):
-                    print("area de TI")
+                    print("Bem vindo a area de TI")
                     break
 
                 if (self.codigo == "1001"):
-                    print("area de RH")
+                    print("Bem vindo a area de RH")
                     break
 
                 if (self.codigo == "1002"):
-                    print("area de Comércio")
+                    print("Bem vindo a area de Comércio")
                     break
 
                 if (self.codigo == "1003"):
-                    print("area de Geranciamento")
+                    print("Bem vindo a area de Geranciamento")
                     break
 
                 if (self.codigo == "1004"):
-                    print("area Fiscal")
+                    print("Bem vindo a area Fiscal")
                     break
 
                 if (self.codigo == "1005"):
-                    print("area de Marketing")
+                    print("Bem vindo a area de Marketing")
                     break
 
         elif (self.codigo == "1000"):
-            print("area de TI")
+            print("Bem vindo a area de TI")
 
         elif (self.codigo == "1001"):
-            print("area de RH")
+            print("Bem vindo a area de RH")
 
         elif (self.codigo == "1002"):
-            print("area de Comércio")
+            print("Bem vindo a area de Comércio")
 
         elif (self.codigo == "1003"):
-            print("area de Geranciamento")
+            print("Bem vindo a area de Geranciamento")
 
         elif (self.codigo == "1004"):
-            print("area Fiscal")
+            print("Bem vindo a area Fiscal")
 
         elif (self.codigo == "1005"):
-            print("area de Marketing")
+            print("Bem vindo a area de Marketing")
 
         return self.codigo

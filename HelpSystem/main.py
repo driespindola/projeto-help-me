@@ -1,7 +1,8 @@
-from Contas import Conta
-from Solicitacoes import Solicitacao
+from Var import testes
 
 
-usuario01 = Conta("Gustavo",10000,"1000")
+teste01 = testes("arnaldo", 123456, 1000,"TI", "problema de rede", "Urgente")
 
-pedido01 = Solicitacao(1,"problemas de conexção", "Extrema Urgencia")
+teste02 = testes("arnaldo", 123456, 1000,"TI", "problema de rede", "Urgente")
+
+teste03 = testes("arnaldo", 123456, 1000,"TI", "problema de rede", "Urgente")
