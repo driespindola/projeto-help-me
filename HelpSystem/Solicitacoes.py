@@ -8,9 +8,7 @@ class Solicitacao:
         self.descreva_solic(self.descricao, self.gravidade)
 
 
-    #def lista_de_solic(self,lista,indice):
-       # self.lista = lista[]
-        #self.indice = indice
+
 
 
 
@@ -70,7 +68,5 @@ class Solicitacao:
 
         self.descricao = str(input("Por favor descreva a natureza de sua solicitação:"))
 
-        self.gravidade = int(input("Por favor indique o nivel de gravidade de sua solicitação\n"
+        self.gravidade = str(input("Por favor indique o nivel de gravidade de sua solicitação\n"
                                    "1 Pequena, 2 Moderada, 3 Consideravel, 4 Urgente, 5 Extrema Urgencia:"))
-
-        return self.descricao
