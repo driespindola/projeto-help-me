@@ -9,10 +9,6 @@ class Solicitacao:
 
 
 
-
-
-
-
     def tipo_solicitacao(self, tipo):
 
         self.tipo = tipo
@@ -68,5 +64,5 @@ class Solicitacao:
 
         self.descricao = str(input("Por favor descreva a natureza de sua solicitação:"))
 
-        self.gravidade = str(input("Por favor indique o nivel de gravidade de sua solicitação\n"
+        self.gravidade = int(input("Por favor indique o nivel de gravidade de sua solicitação\n"
                                    "1 Pequena, 2 Moderada, 3 Consideravel, 4 Urgente, 5 Extrema Urgencia:"))
