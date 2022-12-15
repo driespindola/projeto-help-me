@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 class Conta:
     def __init__(self, nome, senha, codigo):
         self.nome = nome
@@ -8,7 +6,6 @@ class Conta:
         self.Defina_Nome(self.nome)
         self.Defina_Senha(self.senha)
         self.Defina_Area(self.codigo)
-
 
 
 
@@ -84,6 +81,5 @@ class Conta:
                 if (self.codigo == "1005"):
                     print("area de Marketing")
                     break
-
 
         return self.codigo
