@@ -2,7 +2,7 @@ from Contas import Conta
 from Solicitacoes import Solicitacao
 import csv
 
-class testes(Conta,Solicitacao):
+class pedido(Conta, Solicitacao):
     def __init__(self, nome, senha, codigo, tipo, descricao, gravidade):
         self.nome = nome
         self.senha = senha
