@@ -1,4 +1,7 @@
+
 class Solicitacao:
+    import csv
+    from Contas import Conta
 
     def __init__(self, tipo,descricao, gravidade):
         self.tipo = tipo
@@ -66,3 +69,12 @@ class Solicitacao:
 
         self.gravidade = int(input("Por favor indique o nivel de gravidade de sua solicitação\n"
                                    "1 Pequena, 2 Moderada, 3 Consideravel, 4 Urgente, 5 Extrema Urgencia:"))
+
+
+        with open('dados.csv','w') as dados
+
+        writer = csv.writer(dados)
+        header = (['nome', 'tipo', 'gravidade', 'descricao'])
+        writer.writerow(header)
+
+        writer.writerow([nome, tipo, gravidade, descricao])
