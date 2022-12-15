@@ -1,4 +1,3 @@
-import csv
 class Conta:
     def __init__(self, nome, senha, codigo):
         self.nome = nome
@@ -57,6 +56,7 @@ class Conta:
             while not(self.codigo in codigo):
                 print("código invalido")
                 self.codigo = str(input("Digite o Código de Sua area:"))
+
                 if (self.codigo == "1000"):
                     print("Bem vindo a area de TI")
                     break
