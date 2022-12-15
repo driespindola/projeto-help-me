@@ -12,7 +12,7 @@ class Solicitacao():
         self.tipo = tipo
 
         self.tipo = int(input("Por favor digite um dos numeros a seguir referentes a sua solicitação"
-                              "1 para TI, 2 para RH, 3 area de comercio,\n4 Para a area de gerenciamento,"
+                              "1 para TI, 2 para RH, 3 area de comercio,\n 4 Para a area de gerenciamento,"
                               "5 Para a area Fiscal, 6 Para a area de Marketing,"
                               "7 Para outro tipo de Solicitação:"))
 
@@ -68,7 +68,7 @@ class Solicitacao():
         self.descricao = str(input("Por favor descreva a natureza de sua solicitação:"))
 
         self.gravidade = int(input("Por favor indique o nivel de gravidade de sua solicitação\n"
-                                   "1 Pequena, 2 Moderada, 3 Consideravel, 4 Urgente, 5 Extrema Urgencia:"))
+                                   " 1 Pequena, 2 Moderada, 3 Consideravel, 4 Urgente, 5 Extrema Urgencia:"))
 
         if(self.gravidade == 1):
             self.gravidade = "Pequena Urgencia"
