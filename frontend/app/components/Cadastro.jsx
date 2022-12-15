@@ -108,8 +108,6 @@ const Cadastro = () => {
                 </FormControl>
                 <Button onClick={handleSubmit} variant='contained' sx={{ marginTop: 3, marginLeft: 15, marginRight: 15 }}>Cadastrar</Button>
             </FormGroup>
-            
-            
         </Box>
         <p>Já possui uma conta? <Button href="/" variant='contained'>Login</Button></p>
     </Container>
