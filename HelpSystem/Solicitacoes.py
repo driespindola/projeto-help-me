@@ -1,10 +1,11 @@
 class Solicitacao:
 
-    def __init__(self, tipo,descricao):
+    def __init__(self, tipo,descricao, gravidade):
         self.tipo = tipo
         self.descricao = descricao
+        self.gravidade = gravidade
         self.tipo_solicitacao(self.tipo)
-        self.descreva_solic(self.descricao)
+        self.descreva_solic(self.descricao, self.gravidade)
 
 
     #def lista_de_solic(self,lista,indice):
@@ -44,6 +45,7 @@ class Solicitacao:
         elif(self.tipo == 6):
             print("Bem vindo a area de Marketing")
 
+
         elif(self.tipo == 7):
             print("sua solicitação não se referre a uma area especifica")
 
@@ -67,7 +69,8 @@ class Solicitacao:
         self.gravidade = gravidade
 
         self.descricao = str(input("Por favor descreva a natureza de sua solicitação:"))
+
         self.gravidade = int(input("Por favor indique o nivel de gravidade de sua solicitação\n"
-                                   "1 Pequena, 2 Moderada, 3 Consideravel, "))
+                                   "1 Pequena, 2 Moderada, 3 Consideravel, 4 Urgente, 5 Extrema Urgencia:"))
 
         return self.descricao
