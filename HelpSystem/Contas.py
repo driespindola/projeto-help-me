@@ -82,22 +82,22 @@ class Conta:
                     print("area de Marketing")
                     break
 
-        if (self.codigo == "1000"):
+        elif (self.codigo == "1000"):
             print("area de TI")
 
-        if (self.codigo == "1001"):
+        elif (self.codigo == "1001"):
             print("area de RH")
 
-        if (self.codigo == "1002"):
+        elif (self.codigo == "1002"):
             print("area de Comércio")
 
-        if (self.codigo == "1003"):
+        elif (self.codigo == "1003"):
             print("area de Geranciamento")
 
-        if (self.codigo == "1004"):
+        elif (self.codigo == "1004"):
             print("area Fiscal")
 
-        if (self.codigo == "1005"):
+        elif (self.codigo == "1005"):
             print("area de Marketing")
 
         return self.codigo
