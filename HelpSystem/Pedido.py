@@ -23,6 +23,7 @@ class pedido(Conta, Solicitacao):
         self.tipo = tipo
         self.descricao = descricao
         self.gravidade = gravidade
+
         with open('dados.csv', 'w') as dados:
             writer = csv.writer(dados)
             header = (['nome', 'tipo', 'gravidade', 'descricao'])
