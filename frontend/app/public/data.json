@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "Juliana",
+    "tipo": "Area de Marketing",
+    "gravidade": "Urgente",
+    "descricao": "custos do marketing"
+  },
+  {
+    "nome": "Gustavo",
+    "tipo": "Area de TI",
+    "gravidade": "Urgencia Moderada",
+    "descricao": "custos do marketing"
+  },
+  {
+    "nome": "Adriana",
+    "tipo": "Area de RH",
+    "gravidade": "Urgente",
+    "descricao": "Extrema Urgencia"
+  },
+  {
+    "nome": "José",
+    "tipo": "Area Fiscal",
+    "gravidade": "Urgente",
+    "descricao": "custos do marketing"
+  }
+]

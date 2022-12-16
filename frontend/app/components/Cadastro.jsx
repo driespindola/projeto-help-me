@@ -31,6 +31,10 @@ const Cadastro = () => {
         },
         {
           value: '1004',
+          label: 'area do Gerenciamento',
+        },
+        {
+          value: '1005',
           label: 'area de Marketing',
         },
       ];
@@ -56,7 +60,7 @@ const Cadastro = () => {
         } else if (senha.length < 5) {
             setErrorPassword(true)
             setErrorTextPassword('Senha invalida, a senha requer um minimo de 5 caracteres nescessarios')
-        } else if (senha.length > 20) {
+        } else if (senha.length > 9) {
             setErrorPassword(true)
             setErrorTextPassword('Senha invalida, a senha ultrapassa o limite de caracteres permitidos')
         } else {
@@ -75,14 +79,14 @@ const Cadastro = () => {
         alignItems: 'center' 
       }}>
         <h1>Cadastro</h1>
-        <Box sx={{ display: 'flex', flexDirection: 'column', width: 400 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', width: 400, backgroundColor: 'white', padding: 5 }}>
             <FormGroup onSubmit={handleSubmit} >
-                <FormControl >
+                <FormControl sx={{ marginRight: 5 }} >
                     <InputLabel error={errorName} form='text'>Nome Completo:</InputLabel>
                     <Input error={errorName} type='text' placeholder='Insira seu nome aqui' value={nome} onChange={(e) => setNome(e.target.value)} />
                     <FormHelperText error={errorName}>{errorTextName}</FormHelperText>
                 </FormControl>
-                <FormControl sx={{ marginTop: 5 }}>
+                <FormControl sx={{ marginTop: 5, marginRight: 5 }}>
                 <TextField
                     select
                     label="Area"
@@ -96,20 +100,20 @@ const Cadastro = () => {
                         ))}
                 </TextField>
                 </FormControl>
-                <FormControl error={errorPassword} sx={{ marginTop: 5 }}>
+                <FormControl error={errorPassword} sx={{ marginTop: 5, marginRight: 5 }}>
                     <InputLabel error={errorPassword} form='password'>Senha:</InputLabel>
                     <Input type='password' placeholder='Insira sua senha aqui' value={senha} onChange={(e) => setSenha(e.target.value)} />
                     <FormHelperText error={errorPassword}>{errorTextPassword}</FormHelperText>
                 </FormControl>
-                <FormControl error={errorPassword}  sx={{ marginTop: 5 }}>
+                <FormControl error={errorPassword}  sx={{ marginTop: 5, marginRight: 5 }}>
                     <InputLabel error={errorPassword} form='password'>Confirmar Senha:</InputLabel>
                     <Input error={errorPassword} type='password' placeholder='Confirme sua senha' value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)}/>
                     <FormHelperText error={errorPassword}>{errorTextPassword}</FormHelperText>
                 </FormControl>
-                <Button onClick={handleSubmit} variant='contained' sx={{ marginTop: 3, marginLeft: 15, marginRight: 15 }}>Cadastrar</Button>
+                <Button onClick={handleSubmit} variant='contained' sx={{ marginTop: 3 }}>Cadastrar</Button>
             </FormGroup>
         </Box>
-        <p>Já possui uma conta? <Button href="/" variant='contained'>Login</Button></p>
+        <p className='white-p'>Já possui uma conta? <Button href="/" variant='contained'>Login</Button></p>
     </Container>
   )
 }

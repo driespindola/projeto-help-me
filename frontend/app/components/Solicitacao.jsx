@@ -2,16 +2,30 @@ import React from 'react'
 import { Box, Button, Container, FormControl,FormControlLabel, FormGroup, InputLabel, Radio, RadioGroup } from '@mui/material'
 
 const Solicitacao = () => {
+    const updatedJSON = {
+        "nome": "Adriana",
+        "tipo": "Area de RH",
+        "gravidade": "Urgente",
+        "descricao": "Extrema Urgencia"
+    }
+
+    const updateJson = () => {
+        fs.writeFile('../public/data.json', JSON.stringify(updatedJSON), (err) => {
+            if (err) console.log('Error writing file:', err);
+        })
+    }
+
   return (
     <Container  sx={{ 
         display: 'flex', 
         flexDirection: 'column', 
         textAlign: 'center', 
         justifyContent: 'center', 
-        alignItems: 'center' 
+        alignItems: 'center',
+        padding: 5 
     }}>
         <h1>Solicitação</h1>
-        <Box sx={{ display: 'flex', flexDirection: 'column', width: 600 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', width: 600, backgroundColor: 'white', padding: 5 }}>
             <FormGroup>
                 <FormControl>
                     <p>Por favor selecione a sua solicitação</p>
@@ -37,7 +51,7 @@ const Solicitacao = () => {
                         <FormControlLabel value="4" control={<Radio />} label="Extrema Urgencia" />
                     </RadioGroup>
                 </FormControl>
-                <Button variant='contained' sx={{ marginX:20 }}>Solicitar</Button>
+                <Button onClick={updateJson} href='/dashboard' variant='contained' sx={{ marginX:20 }}>Solicitar</Button>
             </FormGroup>
         </Box>
     </Container>

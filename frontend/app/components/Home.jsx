@@ -11,7 +11,7 @@ const Home = () => {
       alignItems: 'center' 
     }}>
       <h1>Login</h1>
-      <Box sx={{ display: 'flex', flexDirection: 'column', width: 200 }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', width: 200, backgroundColor: 'white', padding: 5, width: 300 }}>
         <FormControl >
           <FormLabel form="text" sx={{ textAlign: 'left' }}>Nome Completo:</FormLabel>
           <Input type="text" placeholder='Nome'></Input>
@@ -21,7 +21,7 @@ const Home = () => {
         </FormControl>
       </Box>
       <Box >
-        <p>Novo por aqui? <Button href='/cadastro' variant="contained">Cadastre-se</Button></p>
+        <p className='white-p'>Novo por aqui? <Button href='/cadastro' variant="contained">Cadastre-se</Button></p>
       </Box>
     </Container>
   )
